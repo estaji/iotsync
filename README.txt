@@ -8,7 +8,11 @@
 	IoT-Device(IoT)
 	
 **************  Instruction  **************
-1. 'iot' and 'cmd' and 'tcp_wrapper' should be in same(home) directory in IoT device.
-2. 'mirror' and 'cmd' should be in same(home) directory in Mirror virtual machine in cloud.
+1.Move iotsync/iot/ files to user home directory on IoT
+2.Move iotsync/mirror/ files to user home directory on VM
+3.Move iotsync/utilities/ files to user home directory on both(IoT & VM)
+4.Run ~/tcp_wrapper.py in IoT
+5.Run ~/iot.py in IoT
+6.Run ~/mirror.py in VM
 
 more information soon...
