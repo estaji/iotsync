@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 # Direct Cloud Sync
-# Author: Omid Estaji (estaji.work@gmail.com)
+# Omid Estaji (estaji.work@gmail.com)
 # Run Command Component
 
 from sys import argv
