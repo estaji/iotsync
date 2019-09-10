@@ -12,7 +12,7 @@ For more information read: https://ieeexplore.ieee.org/document/7830733
 
 ## Deployment
 1. Move iotsync/iot/ files to IoT device and user home directory.
-2. Move iotsync/mirror/ files to mirror virtual machine and user home directory.
+2. Move iotsync/mirror/ files to mirrored virtual machine and user home directory.
 3. Move iotsync/utilities/ files to both devices.
 4. Update IPs, ports, usernames, passwords, paths in codes.
 5. Run ~/tcp_wrapper.py on IoT device.
