@@ -5,7 +5,7 @@ For more information read: https://ieeexplore.ieee.org/document/7830733
 
 ## Requirements
 1. Two linux-based devices:
-- A virtual-Machine(VM) in a public cloud called 'mirror'
+- A virtual-Machine(VM) in a public cloud called 'mirror' or VM.
 - An ioT-Device(IoT) connected to Internet
 2. Install Python3 and pip3 on both devices.
 3. Install Paramiko module on both devices: "$ pip3 install paramiko"
@@ -18,3 +18,16 @@ For more information read: https://ieeexplore.ieee.org/document/7830733
 5. Run ~/tcp_wrapper.py on IoT device.
 6. Run ~/iot.py on IoT device.
 7. Run ~/mirror.py on the mirror.
+
+## Instruction
+1. Execute all commands by this pattern:
+```
+$./cmd.py <shell_command1> … <shell_commandn>
+```
+
+## How it works
+By executing all commands using above pattern, the device run it and write a copy of that in cmd.txt.
+### IoT device
+At first it disables it's network interface. then after a delay(timer), it enables it's network interface and sends a heartbead to the VM. It compares update numbers and finds out new executed codes. Then it connects to VM via ssh or listen to incoming ssh connection from VM for updating phase. After one cycle, it disables it's network interface again.
+### Virtual Machine(VM)
+It always listens for incoming heartbeat messages. Everytime it detects a new state by comparing update numbers, it would connect to IoT device or listen to incoming ssh connection in updating phase.
