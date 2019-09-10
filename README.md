@@ -4,17 +4,17 @@ Original idea comes from an article named "IoT Protection Through Device to Clou
 For more information read: https://ieeexplore.ieee.org/document/7830733
 
 ## Requirements
-1.Two linux-based devices:
-	A virtual-Machine(VM) in a public cloud called 'mirror'
-	An ioT-Device(IoT) connected to Internet
-2.Install Python3 and pip3 on both devices.
-3.Install Paramiko module on both devices: "$ pip3 install paramiko"
+1. Two linux-based devices:
+- A virtual-Machine(VM) in a public cloud called 'mirror'
+- An ioT-Device(IoT) connected to Internet
+2. Install Python3 and pip3 on both devices.
+3. Install Paramiko module on both devices: "$ pip3 install paramiko"
 
 ## Deployment
-1.Move iotsync/iot/ files to IoT device and user home directory.
-2.Move iotsync/mirror/ files to mirror virtual machine and user home directory.
-3.Move iotsync/utilities/ files to both devices.
-4.Update IPs, ports, usernames, passwords, paths in codes.
-5.Run ~/tcp_wrapper.py on IoT device.
-6.Run ~/iot.py on IoT device.
-7.Run ~/mirror.py on mirror.
+1. Move iotsync/iot/ files to IoT device and user home directory.
+2. Move iotsync/mirror/ files to mirror virtual machine and user home directory.
+3. Move iotsync/utilities/ files to both devices.
+4. Update IPs, ports, usernames, passwords, paths in codes.
+5. Run ~/tcp_wrapper.py on IoT device.
+6. Run ~/iot.py on IoT device.
+7. Run ~/mirror.py on mirror.
