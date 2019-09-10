@@ -67,7 +67,7 @@ def ssh(upnum):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     try:
-        ssh.connect('192.168.1.3', username='omid', password='omid369852')
+        ssh.connect('192.168.1.3', username='omid', password='password_phrase')
         commands = ''
         path = 'cmd.txt'
         file = open(path, 'r')
