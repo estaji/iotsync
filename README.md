@@ -17,4 +17,4 @@ For more information read: https://ieeexplore.ieee.org/document/7830733
 4. Update IPs, ports, usernames, passwords, paths in codes.
 5. Run ~/tcp_wrapper.py on IoT device.
 6. Run ~/iot.py on IoT device.
-7. Run ~/mirror.py on mirror.
+7. Run ~/mirror.py on the mirror.
