@@ -31,3 +31,6 @@ By executing all commands using above pattern, the device writes a copy of that 
 At first it disables it's network interface. then after a delay(timer), it enables it's network interface and sends a heartbeat to the VM. It compares update numbers and finds out new executed codes. Then it connects to VM via ssh or listen to incoming ssh connection from VM for updating phase. After one cycle, it disables it's network interface again.
 ### Virtual Machine(VM)
 It always listens for incoming heartbeat messages. Everytime it detects a new state by comparing update numbers, it would connect to IoT device or listen to incoming ssh connection in updating phase.
+
+## Contribution
+I won't continue this project but you can contribute to this repository or fork it.
